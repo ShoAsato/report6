@@ -7,32 +7,31 @@ public class Main {
 
 
         Game[] game = {
-            new Game("現在の元号は？"),
-            new Game("1 平成"),
-            new Game("2 令和"),
-            new Game("3 昭和"),
+            new Game("オーストラリアの首都はどこでしょうか？"),
+            new Game("1 キャンベラ"),
+            new Game("2 シドニー"),
+            new Game("3 ブリスベン"),
+            new Game("キリンの１日の市民時間は？"),
+            new Game("1 20時間"),
+            new Game("2 8時間"),
+            new Game("3 20分"),
 
         };
-        System.out.println(game[0]);
-        System.out.println(game[1]);
-        System.out.println(game[2]);
-        System.out.println(game[3]);
 
-
-        Game1 game1s = new Game1();
-
-        Contorol contorol = new Contorol();
+        for(int i=0; i<4;i++) {
+            System.out.println(game[i]);
+        }
 
 
 
+        Quiz1 quiz1 = new Quiz1();
+        quiz1.answer();
 
-
-
-        /*for(int i=0; i<game.length; i++){
-            System.out.println(game[i].toString());
-        }**/
-        contorol.start();
-        contorol.answer();
+        for(int i=4; i<8; i++) {
+            System.out.println(game[i]);
+        }
+        Quiz2 quiz2 = new Quiz2();
+        quiz2.answer();
 
 
 
